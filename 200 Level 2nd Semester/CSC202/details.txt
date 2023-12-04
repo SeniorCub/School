@@ -1,0 +1,48 @@
+
+Running C code in Visual Studio Code (VSCode) on a Windows PC involves a few steps. Here's a step-by-step guide:
+
+Install Visual Studio Code:
+If you haven't already, download and install Visual Studio Code from the official website: Visual Studio Code.
+
+Install a C Compiler:
+You need a C compiler to compile and run your C code. One popular option for Windows is MinGW (Minimalist GNU for Windows). Follow these steps to install MinGW:
+
+Download the MinGW installer from the official website: MinGW.
+Run the installer and follow the on-screen instructions.
+During installation, make sure to select the option to install the "C Compiler" and any other components you might need.
+Install the C/C++ Extension for VSCode:
+Open VSCode and go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window (or use the keyboard shortcut Ctrl+Shift+X). Search for "C/C++" in the Extensions view search box, and install the one provided by Microsoft.
+
+Configure VSCode for C:
+Open your C file or create a new one. If it's a new file, make sure to save it with a ".c" extension.
+
+Configure Build Tasks:
+To compile and run your C code, you need to configure build tasks. Create a tasks.json file in the .vscode folder in your project directory. If this folder doesn't exist, you can create it manually. Add the following configuration to tasks.json:
+
+json
+Copy code
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and run",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+This configuration assumes you have MinGW installed, and it uses the "gcc" compiler.
+
+Compile and Run:
+Open your C file, press Ctrl+Shift+B to build and run your program. If everything is set up correctly, you should see the output in the integrated terminal.
+
+That's it! You should now be able to write, compile, and run C code in Visual Studio Code on your Windows PC.
