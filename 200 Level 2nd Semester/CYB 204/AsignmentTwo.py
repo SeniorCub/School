@@ -9,3 +9,16 @@
 #     return 2
 # k = foo()
 # print(k)
+
+# try:
+#     print(1)
+# finally:
+#     print(2)
+#     foo()
+
+# def_init_(self, x, y, z):
+#     self.a = X+y+z
+#     x = change(1,2,3)
+#     y = getattr(x,'a')
+#     setattr(x, 'a', y+1)
+
