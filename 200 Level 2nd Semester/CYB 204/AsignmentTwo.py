@@ -22,3 +22,10 @@
 #     y = getattr(x,'a')
 #     setattr(x, 'a', y+1)
 
+# def_init_(self):
+#     self.variable = 'Old'
+#     self.Change (self.Variable)
+# def Change(self, var):
+#     var = 'New'
+# obj-test(0)
+# print(obj.variable)
