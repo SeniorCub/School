@@ -20,5 +20,7 @@ Welcome to the **School** repository! This GitHub repository serves as your dedi
 
 Whether you're a seasoned coder or just starting your coding journey, the **School** repository is designed to help you make the most of your university learning experience. Stay organized, track your progress, and dive into the fascinating world of Computer Science with confidence.
 
-Happy coding! 🚀👩‍💻👨‍💻
+Happy coding!!! 🚀👩‍💻👨‍💻
+
+<!-- Im tryttrying not to loose my GitHub Streak -->
 <!-- Im tryttrying not to loose my GitHub Streak -->
