@@ -5,6 +5,7 @@ def calculate_bill(previous_reading, current_reading, cost_per_unit, vat_rate):
     final_cost = total_cost + vat_amount
     return final_cost
 
+
 # Input
 name = input("Enter customer name: ")
 address = input("Enter customer address: ")
