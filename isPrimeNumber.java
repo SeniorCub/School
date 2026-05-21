@@ -1,13 +1,24 @@
+package csc202.isprimenumber;
+
+import java.util.logging.Logger;
+
 public class PrimeChecker {
+    private static final Logger LOGGER = Logger.getLogger(PrimeChecker.class.getName());
+
+    private PrimeChecker() {
+    }
 
     public static void main(String[] args) {
         // Example number to check
-       int number = 2;
+        int number = 2;
+        if (args.length > 0) {
+            number = Integer.parseInt(args[0]);
+        }
 
         if (isPrime(number)) {
-            System.out.println(number + " is a prime number.");
+            LOGGER.info(number + " is a prime number.");
         } else {
-            System.out.println(number + " is not a prime number.");
+            LOGGER.info(number + " is not a prime number.");
         }
     }
 

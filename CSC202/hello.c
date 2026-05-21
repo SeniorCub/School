@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-     var name = "reuben";
+    const char *name = "reuben";
 	printf("Hello, World!\n");
-	printf("My Name is: " + name + "\n")
+	printf("My Name is: %s\n", name);
     return 0;
 }

@@ -5,12 +5,11 @@ x = 2 + 9*((3 * 12) - 8) / 10
 print(x)
 
 # 2
-# Banana = mango
 
 # 3
-if (9 < 0) and (0 < -9):
+if (x < 0) and (0 < -x):
     print("Hello")
-elif (9 > 0) or False:
+elif x > 0:
     print("Good")
 else:
     print("Bad")
@@ -21,7 +20,6 @@ for x in d.keys():
     print(d[x])
 
 # 5
-# print("hello" +1+2+3)
 
 # 6
 print("xyyzxyzxzxyy".count('yy'))

@@ -90,8 +90,8 @@ num4 = 10
 num5 = 10
 print(num4 > num3)  # 10 is greater than 5
 print(num3 > num4)  # 5 is not greater than 10
-print(num4 is num5)  # Both have the same value
-print(num5 is not num3)  # Both have different values
+print(num4 == num5)  # Both have the same value
+print(num5 != num3)  # Both have different values
 print(3 + 10 == 5 + 5)  # Both are not Equal
 print(3 <= 2)  # 3 is not less than or equal to 2
 

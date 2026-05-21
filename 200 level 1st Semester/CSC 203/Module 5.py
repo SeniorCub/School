@@ -1,4 +1,5 @@
 # String Concatenation
+POINT1_PROMPT = "Enter point1 separated with comma: "
 print("Hello, "+"World")
 print(int(3+2))
 print(int(4.0/2))
@@ -35,10 +36,10 @@ a = 10.6
 b = round(a)
 print(b)
 
-x1 = int(input("Enter point1 separated with comma: "))
-x2 = int(input("Enter point1 separated with comma: "))
+x1 = int(input(POINT1_PROMPT))
+x2 = int(input(POINT1_PROMPT))
 y1 = int(input("Enter point2 separated with comma: "))
-y2 = int(input("Enter point1 separated with comma: "))
+y2 = int(input(POINT1_PROMPT))
 x3 = x2 - x1
 y3 = y2 - y1
 distance = ((((x3)**2)+((y3)**2))**0.5)

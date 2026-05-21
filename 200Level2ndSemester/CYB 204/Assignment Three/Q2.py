@@ -28,11 +28,10 @@ def calculate_admission_cost(ages):
 
 # Get user input for ages
 ages = []
-while True:
-    age_input = input("Enter the age of a guest (press Enter for no more guests): ")
-    if not age_input:
-        break  # Break the loop if a blank line is entered
+age_input = input("Enter the age of a guest (press Enter for no more guests): ")
+while age_input:
     ages.append(age_input)
+    age_input = input("Enter the age of a guest (press Enter for no more guests): ")
 
 # Calculate and display the admission cost
 calculate_admission_cost(ages)

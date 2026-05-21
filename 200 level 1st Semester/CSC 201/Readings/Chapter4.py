@@ -19,7 +19,7 @@ minimum(num1 , num2)
 
 name = "Ned"
 def func():
-    name = "Stark"
+    pass
 func()
 print(name)  # accessing 'name' outside the function
 

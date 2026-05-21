@@ -1,20 +1,30 @@
+package csc202.primenumber;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class PrimeChecker {
+    private static final Logger LOGGER = Logger.getLogger(PrimeChecker.class.getName());
+
+    private PrimeChecker() {
+    }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
-
-        if (isPrime(number)) {
-            System.out.println(number + " is a prime number.");
+        int number;
+        if (args.length > 0) {
+            number = Integer.parseInt(args[0]);
         } else {
-            System.out.println(number + " is not a prime number.");
+            try (Scanner scanner = new Scanner(System.in)) {
+                LOGGER.info("Enter a number: ");
+                number = scanner.nextInt();
+            }
         }
 
-        scanner.close();
+        if (isPrime(number)) {
+            LOGGER.info(number + " is a prime number.");
+        } else {
+            LOGGER.info(number + " is not a prime number.");
+        }
     }
 
     public static boolean isPrime(int number) {
